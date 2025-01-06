@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><center>PROMISE IN JAVASCRIPT!!!</center></h3>
+    <p id="ginger"></p>
+    <script>
+        function mydisplayer(odev)
+        {
+            document.getElementById("ginger").innerHTML=odev;
+        }
+        function sum(d,h)
+        {
+            var sum=d+h;
+            mydisplayer(sum);
+        }
+        let myPromise= new Promise(function(myReseolve,myReject)
+        {
+            let s=0;
+            if(s!=0)
+        {
+            myResolve("OK")
+        }
+        else{
+            myReject("ERROR")
+        }
+        });
+        myPromise.then(
+            function(value){sum(26,42);},
+            function(error){sum(error);}
+        )
+    </script>
+</body>
+</html>
