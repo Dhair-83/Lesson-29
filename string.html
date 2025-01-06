@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><center>JSONNN</center></h2>
+    <p id="john"></p>
+    <script>
+        var niceobj={name:"Dhairya",age:14,place:"India"};
+        var niceJSON=JSON.stringify(niceobj);
+        var myPar=JSON.parse(niceJSON);
+        document.getElementById("john").innerHTML=myPar.name;
+      
+    </script>
+</body>
+</html>
